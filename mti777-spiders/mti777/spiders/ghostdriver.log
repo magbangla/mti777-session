@@ -1,5 +1,212 @@
-[INFO  - 2019-03-13T05:20:50.212Z] GhostDriver - Main - running on port 27149
-[INFO  - 2019-03-13T05:20:52.279Z] Session [c514d300-454f-11e9-b51b-a18bf7a8bd75] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-03-13T05:20:52.279Z] Session [c514d300-454f-11e9-b51b-a18bf7a8bd75] - page.customHeaders:  - {}
-[INFO  - 2019-03-13T05:20:52.279Z] Session [c514d300-454f-11e9-b51b-a18bf7a8bd75] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-03-13T05:20:52.279Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c514d300-454f-11e9-b51b-a18bf7a8bd75
+[INFO  - 2019-03-20T06:52:23.040Z] GhostDriver - Main - running on port 22943
+[INFO  - 2019-03-20T06:52:27.535Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-20T06:52:27.535Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.customHeaders:  - {}
+[INFO  - 2019-03-20T06:52:27.535Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-20T06:52:27.536Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b9667170-4adc-11e9-8208-31cc8d55aa1c
+[INFO  - 2019-03-20T06:54:26.651Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T06:59:26.652Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:04:26.658Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:09:26.658Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:14:26.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:19:26.658Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:24:26.659Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:29:26.659Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:34:26.659Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:39:26.659Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:44:26.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:49:26.660Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:54:47.480Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T07:59:47.485Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:04:47.483Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:09:47.485Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:14:47.485Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:19:47.493Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:24:47.487Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:29:47.487Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:34:47.488Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:39:47.489Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:44:47.489Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:49:47.490Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:54:47.491Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:59:47.491Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:04:47.492Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:09:47.494Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:14:47.499Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:19:47.501Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:36:45.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:41:45.220Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:46:45.224Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:51:45.226Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:56:45.226Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T16:01:45.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T16:06:45.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T16:11:45.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+anagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:12:13.288Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:17:13.279Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:22:13.283Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:27:13.279Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:32:13.279Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:37:13.287Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:42:13.288Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:47:13.294Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:52:13.297Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T08:57:13.310Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:02:13.313Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:07:13.312Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:12:13.312Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:17:13.312Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T09:22:13.312Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:35:28.893Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:40:28.846Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:45:28.857Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:50:28.858Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T15:55:28.862Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T16:00:28.872Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T16:05:28.874Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-20T16:10:28.875Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+tomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:46.312Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:46.313Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/annonce/44632/:59)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  Gj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  ro (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:49.557Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:49.557Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/annonce/43369/:63)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  Gj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  ro (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:52.734Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:52.735Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/annonce/40738/:61)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  Gj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  ro (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:55.695Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:55.695Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/annonce/44842/:63)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  Gj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  ro (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:59.228Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:52:59.229Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/annonce/43009/:65)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  Gj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  ro (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:53:02.789Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-20T06:53:02.789Z] Session [b9667170-4adc-11e9-8208-31cc8d55aa1c] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/annonce/40752/:63)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  Gj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  ro (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019031802.js?21063390:1)
+
+  phantomjs://platform/console++.js:263 in error

@@ -2,13 +2,13 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy import Column, String, Integer
-
+import pymysql
 # db settings
 dbuser = 'magbangla' #DB username
 dbpass = 'password' #DB password
 dbhost = 'db4free.net' #DB host
 dbname = 'mti777' #DB database name
-engine = create_engine("mysql://%s:%s@%s/%s?charset=utf8&use_unicode=0"
+engine = create_engine("mysql+pymysql://%s:%s@%s/%s?charset=utf8&use_unicode=0"
                        %(dbuser, dbpass, dbhost, dbname),
                        echo=False,
                        pool_recycle=1800)

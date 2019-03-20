@@ -64,9 +64,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'mti777.pipelines.Mti777Pipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'mti777.pipelines.Mti777Pipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -97,7 +97,7 @@ SPIDER_SETTINGS = [
         'spider': 'KangalouSpider',
         'scrapy_settings': {
             'ITEM_PIPELINES': {
-                'pipelines.AddTablePipeline': 500
+                'pipelines.Mti777Pipeline': 300
             },
             'DOWNLOADER_MIDDLEWARES':{
             'middlewares.Mti777DownloaderMiddleware':543

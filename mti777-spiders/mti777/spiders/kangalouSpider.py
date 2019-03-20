@@ -21,12 +21,6 @@ class KangalouSpider(scrapy.Spider):
         #soup = BeautifulSoup(html,'html.parser')
         #resp=HtmlResponse(browser.current_url, body=html, encoding='utf-8', request=request)
         #annonces = soup.find_all('div', {'class':'property__inner'})
-        connection = pymysql.connect(host='localhost',
-                             user='root',
-                             password='password',
-                             db='mti777',
-                             charset='utf8mb4',
-                             cursorclass=pymysql.cursors.DictCursor)
         annonces=response.css('.js-propertyTitle')
         #webbrowser.open(response.url)
         for annonce in annonces:
@@ -68,7 +62,8 @@ class KangalouSpider(scrapy.Spider):
                         "adresse":liste_detail[1],
                         "disponibilité":liste_detail[4].strip(),
                         "annonce":str(liste_detail[5].encode('utf8')).strip(),
-                        "images":json.dumps(images)
+                        "images":json.dumps(images),
+                        "id_annonces":str(url_reel[0].encode('utf8')).strip().split('/')[5]
                         }
                     yield data
 #        browser.close()
