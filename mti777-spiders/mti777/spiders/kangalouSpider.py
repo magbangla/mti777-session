@@ -54,7 +54,9 @@ class KangalouSpider(scrapy.Spider):
                     cout=cost.text
                 if len(det1)!=0:
                     liste_detail=str(det1[0].encode('utf8')).split('\n')
-                    data={
+                    print str(url_reel[0].encode('utf8')).strip().split('/')
+                    if len(str(url_reel[0].encode('utf8')).strip().split('/'))>4:
+                        data={
                         #"loyer":loyer,
                         "titre":str(titre[0].encode('utf8')).strip(),
                         "url":str(url_reel[0].encode('utf8')).strip(),
@@ -65,9 +67,12 @@ class KangalouSpider(scrapy.Spider):
                         "images":json.dumps(images),
                         "id_annonces":str(url_reel[0].encode('utf8')).strip().split('/')[5]
                         }
-                    yield data
-#        browser.close()
+                        yield data
+                    else:
+                        pass
+
         next_page='https://www.kangalou.com/fr/recherche/?page='+str(KangalouSpider.page_number)
         if KangalouSpider.page_number<=141:
             KangalouSpider.page_number+=1
+            browser.close()
             yield response.follow(next_page,callback=self.parse)

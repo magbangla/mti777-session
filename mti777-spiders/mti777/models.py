@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy import Column, String, Integer
+from sqlalchemy import Column, String, Integer, Text
 import pymysql
 # db settings
 dbuser = 'magbangla' #DB username
@@ -18,25 +18,30 @@ db = scoped_session(sessionmaker(autocommit=False,
 
 Base = declarative_base()
 
+def create_table(engine):
+    Base.metadata.create_all(engine)
+
 class annonces(Base):
     __tablename__ = 'annonces'
 
     id = Column(Integer, primary_key=True)
     id_annonces=Column(String(20))
+    titre_annonce=Column(String(100))
     adresse=Column(String(100))
-    prix_mini=Column(Integer)
-    prix_maxi=Column(Integer)
-    details=Column(String(1000))
+    loyer=Column(Integer)
+    details=Column(Text())
     url_annonce=Column(String(500))
 
-    def __init__(self, id=None, id_annonces=None, adresse=None, prix_mini=None,prix_maxi=None,details=None,url_annonce=None):
+
+
+    def __init__(self, id=None, id_annonces=None, titre_annonce=None, adresse=None, loyer=None,details=None,url_annonce=None):
 
         self.id = id
         self.id_annonces=id_annonces
+        self.titre_annonce=titre_annonce
         self.adresse=adresse
-        self.prix_mini=prix_mini
-        self.prix_maxi=prix_maxi
+        self.loyer=loyer
         self.details=details
         self.url_annonce=url_annonce
     def __repr__(self):
-        return "<AllData: id='%d', title='%s', url='%s', desc='%s'>" % (self.id, self.title, self.url, self.desc)
+        return "<Annonce: id='%d', title='%s', url='%s', adresse='%s', loyer='%s', detail='%s'>" % (self.id, self.titre_annonce, self.url_annonce, self.adresse, self.loyer, self.details)
