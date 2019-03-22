@@ -1,54 +1,183 @@
 # -*- coding: utf-8 -*-
 import os
 from flask import Flask, url_for, redirect, render_template, request, abort
-form annonce import *
+import pymysql
+#from db_config import mysql
+from flask import jsonify
+from flask import flash, request
+from werkzeug import generate_password_hash, check_password_hash
+from functools import update_wrapper
+#from app import app
+from flaskext.mysql import MySQL
+from flask_cors import CORS, cross_origin
+
+
+def crossdomain(origin=None, methods=None, headers=None,
+				max_age=21600, attach_to_all=True,
+				automatic_options=True):
+	if methods is not None:
+		methods = ', '.join(sorted(x.upper() for x in methods))
+	if headers is not None and not isinstance(headers, basestring):
+		headers = ', '.join(x.upper() for x in headers)
+	if not isinstance(origin, basestring):
+		origin = ', '.join(origin)
+	if isinstance(max_age, timedelta):
+		max_age = max_age.total_seconds()
+
+	def get_methods():
+		if methods is not None:
+			return methods
+
+		options_resp = current_app.make_default_options_response()
+		return options_resp.headers['allow']
+
+	def decorator(f):
+		def wrapped_function(*args, **kwargs):
+			if automatic_options and request.method == 'OPTIONS':
+				resp = current_app.make_default_options_response()
+			else:
+				resp = make_response(f(*args, **kwargs))
+			if not attach_to_all and request.method != 'OPTIONS':
+				return resp
+
+			h = resp.headers
+
+			h['Access-Control-Allow-Origin'] = origin
+			h['Access-Control-Allow-Methods'] = get_methods()
+			h['Access-Control-Max-Age'] = str(max_age)
+			if headers is not None:
+				h['Access-Control-Allow-Headers'] = headers
+			return resp
+
+		f.provide_automatic_options = False
+		return update_wrapper(wrapped_function, f)
+	return decorator
+
+mysql = MySQL()
+
+# MySQL configurations
+
 # Create Flask application
 app = Flask(__name__)
+app.config['MYSQL_DATABASE_USER'] = 'magbangla'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'password'
+app.config['MYSQL_DATABASE_DB'] = 'mti777'
+app.config['MYSQL_DATABASE_HOST'] = 'db4free.net'
+mysql.init_app(app)
+app.config['CORS_HEADERS'] = 'application/json'
+cors = CORS(app, resources={r"/getall": {"origins": "*"},r"/rescherche": {"origins": "*"}})
+app.config['CORS_HEADERS'] = 'Content-Type'
+@app.route('/', methods=['GET'])
+def index():
+	return "<b>test</>"
 
-@app.route('/recherche/', methods=['POST'])
+@app.route('/getall', methods=['GET','OPTIONS'])
+@cross_origin(origin='*',headers=['Content-Type','Authorization'])
+def getall():
+	try:
+		sql = "SELECT * FROM annonces ORDER BY loyer ASC"
+		conn = mysql.connect()
+		cursor = conn.cursor(pymysql.cursors.DictCursor)
+		cursor.execute(sql)
+		rows = cursor.fetchall()
+		photos_=None
+		data=[]
+		for l in rows:
+			id=l['id_annonces']
+			sql_=sql = "SELECT * FROM photos WHERE photos.id_annonce= '"+id+"'"
+			cursor.execute(sql_)
+			rows_photos = cursor.fetchall()
+			photos_object=[]
+			for ph in rows_photos:
+				stg_photos={"url_images":ph["url_images"]}
+				photos_object.append(stg_photos)
+			data_row={"id_annonces":l["id_annonces"],
+					"titre_annonce":l["titre_annonce"],
+					"adresse":l["adresse"],
+					"loyer":l["loyer"],
+					"details":l["details"],
+					"url_annonce":l["url_annonce"],
+					"disponibilite":l["disponibilite"],
+					"photos":photos_object
+			}
+			data.append(data_row)
+		resp = jsonify(data)
+		resp.status_code = 200
+		#return resp
+		return resp
+	except Exception as e:
+		print(e)
+	finally:
+		cursor.close()
+		conn.close()
+
+@app.route('/recherche', methods=['POST','OPTIONS'])
+@cross_origin(origin='*',headers=['Content-Type','Authorization'])
 def recherche():
-    #recupérer les critères de recherche
+	data={
+	"_ville" : request.form['ville'],
+	"_nbre_piece" : request.form['nbre_piece'],
+	"_prix_min" : request.form['prix_min'],
+	"_prix_max" : request.form['prix_max']
+	}
+	try:
+		sql = "SELECT * FROM annonces ORDER BY loyer ASC"
+		conn = mysql.connect()
+		cursor = conn.cursor(pymysql.cursors.DictCursor)
+		cursor.execute(sql)
+		rows = cursor.fetchall()
+		photos_=None
+		data=[]
+		for l in rows:
+			id=l['id_annonces']
+			sql_=sql = "SELECT * FROM photos WHERE photos.id_annonce= '"+id+"'"
+			cursor.execute(sql_)
+			rows_photos = cursor.fetchall()
+			photos_object=[]
+			for ph in rows_photos:
+				stg_photos={"url_images":ph["url_images"]}
+				photos_object.append(stg_photos)
+			data_row={"id_annonces":l["id_annonces"],
+					"titre_annonce":l["titre_annonce"],
+					"adresse":l["adresse"],
+					"loyer":l["loyer"],
+					"details":l["details"],
+					"url_annonce":l["url_annonce"],
+					"disponibilite":l["disponibilite"],
+					"photos":photos_object
+			}
+			data.append(data_row)
+		resp = jsonify(data)
+		resp.status_code = 200
+		#return resp
+		return resp
+	except Exception as e:
+		print(e)
+	finally:
+		cursor.close()
+		conn.close()
+
+@app.route('/getdetails/', methods=['POST'])
+def getdetails():
+	#recupérer les critères de recherche
+
+
+	#faire la recherche dans notre base de données
+
+
+
+	#retourner le résultat au format json
 
 
 
 
-    #faire la recherche dans notre base de données
 
 
 
-    #retourner le résultat au format json
-
-
-
-
-
-
-
-    pass
-
-@app.route('/AuthUser/', methods=['POST'])
-def recherche():
-    #recupérer les critères de recherche
-
-
-
-
-    #faire la recherche dans notre base de données
-
-
-
-    #retourner le résultat au format json
-
-
-
-
-
-
-
-    pass
+	pass
 
 def GenérerHash(data):
-    pass
+	pass
 if __name__ == '__main__':
-    # Start app
-    app.run(debug=True)
+	# Start app
+	app.run(debug=True)

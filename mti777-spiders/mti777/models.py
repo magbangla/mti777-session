@@ -27,6 +27,7 @@ class annonces(Base):
     id = Column(Integer, primary_key=True)
     id_annonces=Column(String(20))
     titre_annonce=Column(String(100))
+    disponibilite=Column(String(100))
     adresse=Column(String(100))
     loyer=Column(Integer)
     details=Column(Text())
@@ -34,7 +35,7 @@ class annonces(Base):
 
 
 
-    def __init__(self, id=None, id_annonces=None, titre_annonce=None, adresse=None, loyer=None,details=None,url_annonce=None):
+    def __init__(self, id=None, id_annonces=None, titre_annonce=None, adresse=None, loyer=None,details=None,url_annonce=None,disponibilite=None):
 
         self.id = id
         self.id_annonces=id_annonces
@@ -43,5 +44,19 @@ class annonces(Base):
         self.loyer=loyer
         self.details=details
         self.url_annonce=url_annonce
+        self.disponibilite=disponibilite
     def __repr__(self):
         return "<Annonce: id='%d', title='%s', url='%s', adresse='%s', loyer='%s', detail='%s'>" % (self.id, self.titre_annonce, self.url_annonce, self.adresse, self.loyer, self.details)
+class photos(Base):
+    __tablename__ = 'photos'
+
+    id = Column(Integer, primary_key=True)
+    id_annonce=Column(String(20))
+    url_images=Column(String(1000))
+
+    def __init__(self, id=None, id_annonce_=None, url_img=None):
+        self.id = id
+        self.id_annonce=id_annonce_
+        self.url_images=url_img
+    def __repr__(self):
+        return "<Annonce: id='%d', id_annonces='%s', url_image='%s'>" % (self.id, self.id_annonce, self.url_images)

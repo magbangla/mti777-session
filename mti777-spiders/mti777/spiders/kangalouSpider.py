@@ -52,6 +52,20 @@ class KangalouSpider(scrapy.Spider):
                     det1.append(item.get_text())
                 for cost in soup.find_all('span', {'class':'cost'}):
                     cout=cost.text
+                    stg1=str(cout.encode('utf8')).strip()
+                    cout1=stg1[0:len(stg1)-1]
+                    if len(cout1.split(" "))>1:
+                        stg2=cout1.split(' ')
+                        stg3=stg2[0]+stg2[1]
+                        try:
+                            cout=float(stg3)
+                        except:
+                            cout=0
+                    else:
+                        try:
+                            cout=float(stg1[0:len(stg1)-1])
+                        except:
+                            cout=0
                 if len(det1)!=0:
                     liste_detail=str(det1[0].encode('utf8')).split('\n')
                     print str(url_reel[0].encode('utf8')).strip().split('/')
@@ -60,11 +74,11 @@ class KangalouSpider(scrapy.Spider):
                         #"loyer":loyer,
                         "titre":str(titre[0].encode('utf8')).strip(),
                         "url":str(url_reel[0].encode('utf8')).strip(),
-                        "cost":str(cout.encode('utf8')).strip(),
+                        "cost":cout,
                         "adresse":liste_detail[1],
                         "disponibilité":liste_detail[4].strip(),
                         "annonce":str(liste_detail[5].encode('utf8')).strip(),
-                        "images":json.dumps(images),
+                        "images":images,
                         "id_annonces":str(url_reel[0].encode('utf8')).strip().split('/')[5]
                         }
                         yield data
