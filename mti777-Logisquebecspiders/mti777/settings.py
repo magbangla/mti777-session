@@ -9,7 +9,7 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'mti777'
+BOT_NAME = 'mti777-Logisquebecspiders'
 
 SPIDER_MODULES = ['mti777.spiders']
 NEWSPIDER_MODULE = 'mti777.spiders'
@@ -52,9 +52,9 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    'mti777.middlewares.Mti777DownloaderMiddleware': 543
-}
+#DOWNLOADER_MIDDLEWARES = {
+#    'mti777.middlewares.Mti777DownloaderMiddleware': 543
+#}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -64,10 +64,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-    'mti777.pipelines.Mti777Pipeline': 300,
-    'mti777.pipelines.AddTablePipeline': 500
-}
+#ITEM_PIPELINES = {
+#    'mti777.pipelines.Mti777Pipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -93,25 +92,16 @@ FEED_EXPORT_ENCODING = 'utf-8'
 
 SPIDER_SETTINGS = [
     {
-        'endpoint': 'KangalouSpider',
-        'location': 'spiders.kangalouSpider',
-        'spider': 'KangalouSpider',
+        'endpoint': 'logisquebecSpider',
+        'location': 'spiders.logisquebecSpider',
+        'spider': 'logisquebecSpider',
         'scrapy_settings': {
             'ITEM_PIPELINES': {
-                'pipelines.Mti777Pipeline': 300
+#                'pipelines.Mti777Pipeline': 300
             },
             'DOWNLOADER_MIDDLEWARES':{
-            'middlewares.Mti777DownloaderMiddleware':543
+#            'middlewares.Mti777DownloaderMiddleware':543
             }
         }
-    },
-        {
-            'endpoint': 'logisquebecSpider',
-            'location': 'spiders.logisquebecSpider',
-            'spider': 'logisquebecSpider',
-            'scrapy_settings': {
-                'ITEM_PIPELINES': {
-                }
-            }
-        }
+    }
 ]

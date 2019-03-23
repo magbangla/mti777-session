@@ -98,6 +98,7 @@ def getall():
 					"details":l["details"],
 					"url_annonce":l["url_annonce"],
 					"disponibilite":l["disponibilite"],
+					"thumbnail_url":l["thumb"],
 					"photos":photos_object
 			}
 			data.append(data_row)

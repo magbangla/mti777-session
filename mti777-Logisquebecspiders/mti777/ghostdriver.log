@@ -1,0 +1,54 @@
+[INFO  - 2019-03-18T05:54:29.679Z] GhostDriver - Main - running on port 16158
+[INFO  - 2019-03-18T05:54:33.725Z] Session [4e0413b0-4942-11e9-8aa3-fff216a554a2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-18T05:54:33.725Z] Session [4e0413b0-4942-11e9-8aa3-fff216a554a2] - page.customHeaders:  - {}
+[INFO  - 2019-03-18T05:54:33.725Z] Session [4e0413b0-4942-11e9-8aa3-fff216a554a2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-18T05:54:33.726Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 4e0413b0-4942-11e9-8aa3-fff216a554a2
+[INFO  - 2019-03-18T14:45:29.413Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T14:50:28.780Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T14:55:28.780Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:00:28.781Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:05:28.788Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:10:28.795Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:15:28.799Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:20:28.807Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:25:28.812Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:30:28.815Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ubleclick.net/gpt/pubads_impl_319.js:1)
+  po (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-18T05:54:36.620Z] Session [4e0413b0-4942-11e9-8aa3-fff216a554a2] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-03-18T05:54:36.620Z] Session [4e0413b0-4942-11e9-8aa3-fff216a554a2] - page.onError - stack:
+  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  open (:0)
+  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (:0)
+  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
+  (anonymous function) (https://www.kangalou.com/fr/recherche/?page=1:15376)
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+  Fj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+  po (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_319.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-03-18T14:45:29.980Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T14:50:29.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T14:55:29.980Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:00:29.980Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:05:29.982Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:10:29.982Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:15:29.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:20:29.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:25:29.993Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-03-18T15:30:29.996Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

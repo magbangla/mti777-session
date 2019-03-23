@@ -5,14 +5,6 @@ from selenium import webdriver
 
 class logisquebecSpider(scrapy.Spider):
     name = 'logisquebecSpider'
-    custom_settings = {
-        'ITEM_PIPELINES': {
-            'pipelines.AddTablePipeline': 500
-        },
-        'DOWNLOADER_MIDDLEWARES':{
-        'middlewares.DownloaderMiddleware':543
-        }
-    }
     allowed_domains = ['www.logisquebec.com']
     start_urls = ['https://www.logisquebec.com/a-louer/']
     page_number=2
