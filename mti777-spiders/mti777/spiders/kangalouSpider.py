@@ -77,7 +77,7 @@ class KangalouSpider(scrapy.Spider):
                         "titre":str(titre[0].encode('utf8')).strip(),
                         "url":str(url_reel[0].encode('utf8')).strip(),
                         "cost":cout,
-                        "adresse":liste_detail[1],
+                        "adresse":liste_detail[1]+','+str(titre[0].encode('utf8')).strip(),
                         "disponibilité":liste_detail[4].strip(),
                         "annonce":str(liste_detail[5].encode('utf8')).strip(),
                         "images":images,

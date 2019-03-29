@@ -7,7 +7,7 @@ from flask import jsonify
 from flask import flash, request
 from werkzeug import generate_password_hash, check_password_hash
 from functools import update_wrapper
-#from app import app
+import json
 from flaskext.mysql import MySQL
 from flask_cors import CORS, cross_origin
 
@@ -69,11 +69,119 @@ cors = CORS(app, resources={r"/getall": {"origins": "*"},r"/rescherche": {"origi
 app.config['CORS_HEADERS'] = 'Content-Type'
 @app.route('/', methods=['GET'])
 def index():
-	return "<b>test</>"
+	return "<b>API WORKS</>"
 
 @app.route('/getall', methods=['GET','OPTIONS'])
 @cross_origin(origin='*',headers=['Content-Type','Authorization'])
 def getall():
+	try:
+		sql = "SELECT * FROM annonces ORDER BY loyer ASC"
+		conn = mysql.connect()
+		cursor = conn.cursor(pymysql.cursors.DictCursor)
+		cursor.execute(sql)
+		rows = cursor.fetchall()
+		photos_=None
+		data=[]
+		for l in rows:
+			data_row={"id_annonces":l["id_annonces"],
+					"titre_annonce":l["titre_annonce"],
+					"adresse":l["adresse"],
+					"loyer":l["loyer"],
+					"details":l["details"],
+					"url_annonce":l["url_annonce"],
+					"disponibilite":l["disponibilite"],
+					"thumbnail_url":l["thumb"]
+			}
+			data.append(data_row)
+		resp = jsonify(data)
+		resp.status_code = 200
+		#return resp
+		return resp
+	except Exception as e:
+		print(e)
+	finally:
+		cursor.close()
+		conn.close()
+
+@app.route('/recherche', methods=['POST','OPTIONS'])
+@cross_origin(origin='*',headers=['Content-Type','Authorization'])
+def recherche():
+	data=request.json
+	data['type_de_chambre']=""
+	#constituer le sql de la requête
+	sql = "SELECT * FROM annonces WHERE "
+	if data["adresse"]!="":
+	  param1="adresse like '%"+str(data["adresse"])+"%'"
+	  sql=sql+param1+" AND "
+	if data["type_de_chambre"]!="":
+	  param2="type_chambre= "+str(data["type_de_chambre"])
+	  sql=sql+param2+ " AND "
+	if data["loyer"]!="":
+	  param3="loyer BETWEEN "+str(data["loyer"][0])+" AND "+ str(data["loyer"][1])
+	  sql=sql+ param3 +"  ORDER BY loyer ASC"
+	print(sql)
+	try:
+		conn = mysql.connect()
+		cursor = conn.cursor(pymysql.cursors.DictCursor)
+		cursor.execute(sql)
+		rows = cursor.fetchall()
+		print (rows)
+		photos_=None
+		data=[]
+
+		for l in rows:
+			id=l['id_annonces']
+			sql_=sql = "SELECT * FROM photos WHERE photos.id_annonce= '"+id+"'"
+			cursor.execute(sql_)
+			rows_photos = cursor.fetchall()
+			photos_object=[]
+			for ph in rows_photos:
+				stg_photos={"url_images":ph["url_images"]}
+				photos_object.append(stg_photos)
+			data_row={"id_annonces":l["id_annonces"],
+						"titre_annonce":l["titre_annonce"],
+						"adresse":l["adresse"],
+						"loyer":l["loyer"],
+						"details":l["details"],
+						"url_annonce":l["url_annonce"],
+						"disponibilite":l["disponibilite"],
+						"photos":photos_object
+			}
+			data.append(data_row)
+		resp = jsonify(data)
+		resp.status_code = 200
+		#return resp
+		return resp
+	except Exception as e:
+		print(e)
+	finally:
+		cursor.close()
+		conn.close()
+
+@app.route('/getphotos/<annonce>', methods=['GET'])
+def getphotos(annonce):
+	try:
+		sql = "SELECT * FROM photos WHERE photos.id_annonce = '"+annonce+"'"
+		conn = mysql.connect()
+		cursor = conn.cursor(pymysql.cursors.DictCursor)
+		cursor.execute(sql)
+		rows_photos = cursor.fetchall()
+		photos_object=[]
+		for ph in rows_photos:
+			stg_photos={"url_images":ph["url_images"]}
+			photos_object.append(stg_photos)
+		resp = jsonify(photos_object)
+		resp.status_code = 200
+		#return resp
+		return resp
+	except Exception as e:
+		print(e)
+	finally:
+		cursor.close()
+		conn.close()
+
+@app.route('/getdetails/', methods=['POST'])
+def getdetails():
 	try:
 		sql = "SELECT * FROM annonces ORDER BY loyer ASC"
 		conn = mysql.connect()
@@ -112,73 +220,6 @@ def getall():
 		cursor.close()
 		conn.close()
 
-@app.route('/recherche', methods=['POST','OPTIONS'])
-@cross_origin(origin='*',headers=['Content-Type','Authorization'])
-def recherche():
-	data={
-	"_ville" : request.form['ville'],
-	"_nbre_piece" : request.form['nbre_piece'],
-	"_prix_min" : request.form['prix_min'],
-	"_prix_max" : request.form['prix_max']
-	}
-	try:
-		sql = "SELECT * FROM annonces ORDER BY loyer ASC"
-		conn = mysql.connect()
-		cursor = conn.cursor(pymysql.cursors.DictCursor)
-		cursor.execute(sql)
-		rows = cursor.fetchall()
-		photos_=None
-		data=[]
-		for l in rows:
-			id=l['id_annonces']
-			sql_=sql = "SELECT * FROM photos WHERE photos.id_annonce= '"+id+"'"
-			cursor.execute(sql_)
-			rows_photos = cursor.fetchall()
-			photos_object=[]
-			for ph in rows_photos:
-				stg_photos={"url_images":ph["url_images"]}
-				photos_object.append(stg_photos)
-			data_row={"id_annonces":l["id_annonces"],
-					"titre_annonce":l["titre_annonce"],
-					"adresse":l["adresse"],
-					"loyer":l["loyer"],
-					"details":l["details"],
-					"url_annonce":l["url_annonce"],
-					"disponibilite":l["disponibilite"],
-					"photos":photos_object
-			}
-			data.append(data_row)
-		resp = jsonify(data)
-		resp.status_code = 200
-		#return resp
-		return resp
-	except Exception as e:
-		print(e)
-	finally:
-		cursor.close()
-		conn.close()
-
-@app.route('/getdetails/', methods=['POST'])
-def getdetails():
-	#recupérer les critères de recherche
-
-
-	#faire la recherche dans notre base de données
-
-
-
-	#retourner le résultat au format json
-
-
-
-
-
-
-
-	pass
-
-def GenérerHash(data):
-	pass
 if __name__ == '__main__':
 	# Start app
-	app.run(debug=True)
+	app.run(debug=True,port="5891")

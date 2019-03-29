@@ -49,6 +49,7 @@ class annonces(Base):
         self.thumb=thumbnail
     def __repr__(self):
         return "<Annonce: id='%d', title='%s', url='%s', adresse='%s', loyer='%s', detail='%s', thumbnail_url='%s'>" % (self.id, self.titre_annonce, self.url_annonce, self.adresse, self.loyer, self.details,self.thumb)
+
 class photos(Base):
     __tablename__ = 'photos'
 

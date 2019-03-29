@@ -20,6 +20,8 @@ class logisquebecSpider(scrapy.Spider):
             titre=annonce.css('#box-result-unit-title a').css('a::text').extract()
             prix=str(annonce.css('.box-result-unit-price::text').extract()).split('$')
             img_small=str(annonce.css('.box-result-unit-photo img').css('img').xpath("@src").extract_first())
+            adresse_complete=str(annonce.css('.box-result-unit-11A::text').extract())
+            print(len(adresse_complete))
             if len(titre)>0:
                 titre=titre[0]
             if len(url_annonce)!=0:
@@ -27,7 +29,10 @@ class logisquebecSpider(scrapy.Spider):
                 browser.get(url_annonce1)
                 html = browser.page_source
                 soup = BeautifulSoup(html,'html.parser')
-                print(soup)
+                #print(soup)
+                ref_annonce=soup.select('.content-annonce-reference')
+                id_="LGQ_"+ref_annonce[0].text.split(":")[1].strip()
+                id_=u' '.join(id_).encode('utf-8').strip()
                 cout=str(prix[0].encode('utf-8').strip())
                 spl=str(cout[3:len(cout)]).split(' ')
                 if len(str(cout[3:len(cout)]).split(' ')) >1:
@@ -50,11 +55,11 @@ class logisquebecSpider(scrapy.Spider):
                         "titre":str(titre.strip().encode('utf8')),
                         "url":str(url_annonce1.encode('utf8')).strip(),
                         "cost":cout,
-                        "adresse":"",
+                        "adresse":adresse_complete.encode('utf-8').strip(),
                         "disponibilité":"",
                         "annonce":"",
                         "images":"",
-                        "id_annonces":"",
+                        "id_annonces":id_,
                         "petite_img":img_small
                         }
                 yield data
