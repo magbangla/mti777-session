@@ -1,173 +1,40 @@
-[INFO  - 2019-03-27T01:07:39.428Z] GhostDriver - Main - running on port 3202
-[INFO  - 2019-03-27T01:07:41.548Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-03-27T01:07:41.548Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.customHeaders:  - {}
-[INFO  - 2019-03-27T01:07:41.548Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-03-27T01:07:41.548Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b87c0770-502c-11e9-9171-31f1a97a66b9
-[ERROR - 2019-03-27T01:07:43.651Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[INFO  - 2019-03-30T01:27:05.516Z] GhostDriver - Main - running on port 61453
+[INFO  - 2019-03-30T01:27:07.554Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-03-30T01:27:07.554Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.customHeaders:  - {}
+[INFO  - 2019-03-30T01:27:07.554Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-03-30T01:27:07.554Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: eeb737a0-528a-11e9-a327-3f2ea132cb47
+[ERROR - 2019-03-30T01:27:08.871Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - msg: Exception in queued GPT command TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:43.652Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/recherche/?page=1:60)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
+[ERROR - 2019-03-30T01:27:08.872Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - stack:
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032501.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:43.663Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2019-03-30T01:27:14.446Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - msg: Exception in queued GPT command TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:43.663Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/recherche/?page=1:15376)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
+[ERROR - 2019-03-30T01:27:14.446Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - stack:
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032501.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:51.169Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2019-03-30T01:27:15.500Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - msg: Exception in queued GPT command TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:51.169Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/annonce/45382/:66)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
+[ERROR - 2019-03-30T01:27:15.500Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - stack:
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032501.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:54.770Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2019-03-30T01:27:16.464Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - msg: Exception in queued GPT command TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:07:54.771Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/annonce/43029/:65)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
+[ERROR - 2019-03-30T01:27:16.465Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - stack:
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032501.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:08:01.721Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
+[ERROR - 2019-03-30T01:27:17.739Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - msg: Exception in queued GPT command TypeError: Type error
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:08:01.721Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/annonce/45214/:63)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:08:09.335Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:08:09.335Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/annonce/45211/:63)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:08:16.644Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - msg: InvalidStateError: DOM Exception 11: An attempt was made to use an object that is not, or is no longer, usable.
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-03-27T01:08:16.645Z] Session [b87c0770-502c-11e9-9171-31f1a97a66b9] - page.onError - stack:
-  onreadystatechange (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  open (:0)
-  ajax (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (:0)
-  value (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  forEach (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  fetchBids (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSlot (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  defineSizeMapping (https://cdn.districtm.ca/merge/merge.v4.4.118212.js:2)
-  (anonymous function) (https://www.kangalou.com/fr/annonce/45203/:59)
-  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  yj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  ho (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
-  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032001.js:1)
+[ERROR - 2019-03-30T01:27:17.739Z] Session [eeb737a0-528a-11e9-a327-3f2ea132cb47] - page.onError - stack:
+  push (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032501.js:1)
 
   phantomjs://platform/console++.js:263 in error

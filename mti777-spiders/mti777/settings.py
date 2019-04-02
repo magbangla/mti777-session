@@ -52,9 +52,9 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    'mti777.middlewares.Mti777DownloaderMiddleware': 543
-}
+#DOWNLOADER_MIDDLEWARES = {
+#    'mti777.middlewares.Mti777DownloaderMiddleware': 543
+#}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -64,10 +64,10 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-    'mti777.pipelines.Mti777Pipeline': 300,
-    'mti777.pipelines.AddTablePipeline': 500
-}
+#ITEM_PIPELINES = {
+#    'mti777.pipelines.Mti777Pipeline': 300,
+#    'mti777.pipelines.AddTablePipeline': 500
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
